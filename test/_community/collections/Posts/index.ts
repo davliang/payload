@@ -12,6 +12,11 @@ export const PostsCollection: CollectionConfig = {
       name: 'title',
       type: 'text',
     },
+    {
+      name: 'list',
+      type: 'relationship',
+      relationTo: 'all-posts',
+    },
   ],
   versions: {
     drafts: true,
